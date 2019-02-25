@@ -1,0 +1,4 @@
+/out/*
+/.idea/*
+binaryTree.iml
+.gitignore.txt

@@ -6,8 +6,7 @@
 
 package com.company;
 
-public interface Arbol {
+public interface Arbol<T>{
     public int hojas();
-    public int sumElements();
-
+//    public T sumElements();
 }

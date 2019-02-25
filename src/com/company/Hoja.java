@@ -4,10 +4,10 @@
 
 package com.company;
 
-public class Hoja implements Arbol{
-    public int value;
+public class Hoja<T> implements Arbol{
+    public T value;
 
-    public Hoja(int value) {
+    public Hoja(T value) {
         this.value = value;
     }
 
@@ -16,8 +16,9 @@ public class Hoja implements Arbol{
         return 1;
     }
 
-    @Override
-    public int sumElements() {
-        return value;
-    }
+//    @Override
+//    public T sumElements() {
+//        return sumNode(value, null);
+//    }
+
 }

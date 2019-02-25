@@ -4,11 +4,11 @@
 
 package com.company;
 
-public class Rama implements Arbol{
-    private Arbol left;
-    private Arbol right;
+public class Rama<T> implements Arbol<T>{
+    private Arbol<T> left;
+    private Arbol<T> right;
 
-    public Rama(Arbol left, Arbol right) {
+    public Rama(Arbol<T> left, Arbol<T> right) {
         this.left = left;
         this.right = right;
     }
@@ -18,8 +18,8 @@ public class Rama implements Arbol{
         return left.hojas() + right.hojas();
     }
 
-    @Override
-    public int sumElements() {
-        return left.sumElements() + right.sumElements();
-    }
+//    @Override
+//    public T sumElements() {
+//        return sumNodes(left.sumElements(), right.sumElements());
+//    }
 }
